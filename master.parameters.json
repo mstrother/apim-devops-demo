@@ -3,13 +3,16 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "publisherEmail": {
-            "value": "admin@contoso.com"
+            "value": "mark.strother@xerris.com"
         },
         "publisherName": {
-            "value": "Contoso"
+            "value": "Xerris"
         },
         "ApimServiceName": {
             "value": "contosoapim-dev"
+        },
+        "repoBaseUrl": {
+            "value": "."
         }
     }
 }
