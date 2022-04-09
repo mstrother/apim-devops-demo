@@ -9,7 +9,7 @@
             "value": "Xerris"
         },
         "ApimServiceName": {
-            "value": "contosoapim-dev"
+            "value": "apim-westjet-dev"
         },
         "repoBaseUrl": {
             "value": "https://raw.githubusercontent.com/mstrother/apim-devops-demo/main"
