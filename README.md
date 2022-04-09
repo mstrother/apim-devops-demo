@@ -2,7 +2,9 @@
 
 Westjet operates 4 API environments: Development, QA, Staging and Production, each has its own API Management instance. The Development, QA, and Staging environment exist in West US 2. 
 
-WestJet's API Management production environment is deploymed to US West 2 and US East. The multi-region deployment of the production instance reduces latency and improves service availability if one region goes offline. The production instance is also deployed with zone redundancy. Zone redundancy replicates the gateway and  control plane across datacenters in physically separated zones. The combination of availability zones for redundancy within a region, and multi-region deployments to improve the gateway availability if there is a regional outage, helps enhance both the reliability and performance.
+WestJet's API Management production environment is deployed to US West 2 and US East. The multi-region deployment of the production instance reduces latency and improves service availability if one region goes offline. The production instance is also deployed with zone redundancy. Zone redundancy replicates the gateway and  control plane across datacenters in physically separated zones. The combination of availability zones for redundancy within a region, and multi-region deployments to improve the gateway availability if there is a regional outage, helps enhance both the reliability and performance.
+
+# API Development
 
 API developers have access to the Development instance and can use it for developing and testing their APIs. Staging and production instances are managed by a designated team.
 
