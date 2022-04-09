@@ -1,4 +1,4 @@
-# WestJet API Deployment Guide
+# WestJet API Management Overview
 
 Westjet operates 4 API environments: Development, QA, Staging and Production, each has its own API Management instance. API developers have access to the Development instance and can use it for developing and testing their APIs. Staging and production instances are managed by a designated team.
 
@@ -6,24 +6,7 @@ API developers can fork the publisher repository to a developer repository and w
 
 Once API developers have finished developing and testing an API, and have generated the API template, they can submit a pull request to merge the changes to the main branch of this repository. The API management team will validate the pull request to make sure the changes are safe and compliant.
 
-# Table of Contents
-
-1. [Running ArmTemplates Application](#running-armTemplates-application)
-2. [ Creator ](#Creator)
-    * [Create the Config File](#creator1)
-    * [Running the Creator](#creator2)
-3. [ Extractor ](#Extractor)
-    * [Running the Extractor](#running-the-extractor)
-
-# Running ArmTemplates Application
-
-Follow this guide for manually building and running the application
-1. git clone repository
-2. navigate to repo root
-3. build application using `dotnet build src/ArmTemplates/ArmTemplates.csproj` (netcore3.1 must be installed)
-4. navigate to built binaries using `cd .\src\ArmTemplates\bin\Debug\netcoreapp3.1\`
-5. run ` dotnet .\ArmTemplates.dll --help` to view all available commands
-6. Investigate possible commands to run and choose desired
+# Creating API Definitions
 
 # Creator
 
