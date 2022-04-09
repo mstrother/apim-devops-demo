@@ -12,7 +12,7 @@ API developers can fork the publisher repository to a developer repository and w
 
 Once API developers have finished developing and testing an API, and have generated the API template, they can submit a pull request to merge the changes to the main branch of this repository. The API management team will validate the pull request to make sure the changes are safe and compliant.
 
-# Creating API Definitions
+## Creating API Definitions
 
 There are two methods to create API definitions. 
 
