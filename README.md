@@ -6,9 +6,9 @@ WestJet's API Management production environment is deployed to US West 2 and US 
 
 1. [API Development](#running-armTemplates-application)
 2. [Creating API Definitions](#Creator)
-3. [ Creator ](#Extractor)
-4. [ Extractor ](#Extractor)
-5. [Route API calls to regional backend services]
+3. [Creator](#Creator)
+4. [Extractor](#Extractor)
+5. [Route API calls to regional backend services](#Extractor)
 
 # API Development
 
