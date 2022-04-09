@@ -73,7 +73,7 @@
             "properties": {
               "mode": "Incremental",
               "templateLink": {
-                 "uri":"[concat(parameters('repoBaseUrl'), '/users.template.json')]",
+                 "relativePath ": "/users.template.json",
                  "contentVersion":"1.0.0.0"
               },
               "parameters": {
@@ -109,7 +109,7 @@
             "properties": {
               "mode": "Incremental",
               "templateLink": {
-                 "uri":"[concat(parameters('repoBaseUrl'), '/products/product-starter.template.json')]",
+                 "relativePath":"/products/product-starter.template.json",
                  "contentVersion":"1.0.0.0"
               },
               "parameters": {
@@ -128,7 +128,7 @@
             "properties": {
               "mode": "Incremental",
               "templateLink": {
-                 "uri":"[concat(parameters('repoBaseUrl'), '/groupsUsers.template.json')]",
+                 "relativePath": "/groupsUsers.template.json",
                  "contentVersion":"1.0.0.0"
               },
               "parameters": {
@@ -147,7 +147,7 @@
             "properties": {
               "mode": "Incremental",
               "templateLink": {
-                 "uri":"[concat(parameters('repoBaseUrl'), '/subscriptions.template.json')]",
+                 "relativePath":"/subscriptions.template.json",
                  "contentVersion":"1.0.0.0"
               },
               "parameters": {
@@ -166,7 +166,7 @@
             "properties": {
               "mode": "Incremental",
               "templateLink": {
-                 "uri":"[concat(parameters('repoBaseUrl'), '/api-httpbin/api-httpbin.version-set.template.json')]",
+                 "relativePath":"/api-httpbin/api-httpbin.version-set.template.json",
                  "contentVersion":"1.0.0.0"
               },
               "parameters": {
@@ -184,7 +184,7 @@
             "properties": {
               "mode": "Incremental",
               "templateLink": {
-                 "uri":"[concat(parameters('repoBaseUrl'), '/api-httpbin/v1/api-httpbin.v1.template.json')]",
+                 "relativePath": "/api-httpbin/v1/api-httpbin.v1.template.json",
                  "contentVersion":"1.0.0.0"
               },
               "parameters": {
@@ -203,7 +203,7 @@
             "properties": {
               "mode": "Incremental",
               "templateLink": {
-                 "uri":"[concat(parameters('repoBaseUrl'), '/api-httpbin/v2/api-httpbin.v2.template.json')]",
+                 "relativePath":"/api-httpbin/v2/api-httpbin.v2.template.json",
                  "contentVersion":"1.0.0.0"
               },
               "parameters": {
