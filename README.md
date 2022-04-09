@@ -584,3 +584,31 @@ apim-templates extract
 By default, each API routes requests to a single backend service URL. Even though there are Azure API Management instances in various regions, the API gateway will still forward requests to the same backend service, which is deployed in only one region. In this case, the performance gain will come only from responses cached within Azure API Management in a region specific to the request, but contacting the backend across the globe may still cause high latency.
 
 To fully leverage geographical distribution of your system, you should have backend services deployed in the same regions as Azure API Management instances. Then, using policies and @(context.Deployment.Region) property, you can route the traffic to local instances of your backend.
+
+```
+<policies>
+    <inbound>
+        <base />
+        <choose>
+            <when condition="@("West US".Equals(context.Deployment.Region, StringComparison.OrdinalIgnoreCase))">
+                <set-backend-service base-url="http://contoso-us.com/" />
+            </when>
+            <when condition="@("East Asia".Equals(context.Deployment.Region, StringComparison.OrdinalIgnoreCase))">
+                <set-backend-service base-url="http://contoso-asia.com/" />
+            </when>
+            <otherwise>
+                <set-backend-service base-url="http://contoso-other.com/" />
+            </otherwise>
+        </choose>
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <base />
+    </outbound>
+    <on-error>
+        <base />
+    </on-error>
+</policies>
+```
