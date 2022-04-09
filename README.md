@@ -1,12 +1,20 @@
 # WestJet API Management Overview
 
-Westjet operates 4 API environments: Development, QA, Staging and Production, each has its own API Management instance. API developers have access to the Development instance and can use it for developing and testing their APIs. Staging and production instances are managed by a designated team.
+Westjet operates 4 API environments: Development, QA, Staging and Production, each has its own API Management instance. The Development, QA, and Staging environment exist in West US 2. The Production environment is deployment to US West 2 and US East. 
+
+API developers have access to the Development instance and can use it for developing and testing their APIs. Staging and production instances are managed by a designated team.
 
 API developers can fork the publisher repository to a developer repository and work on the changes for their APIs. Developers can focus on the API templates for their APIs and do not need to change the shared or service templates.
 
 Once API developers have finished developing and testing an API, and have generated the API template, they can submit a pull request to merge the changes to the main branch of this repository. The API management team will validate the pull request to make sure the changes are safe and compliant.
 
 # Creating API Definitions
+
+There are two methods to create API definitions. 
+
+API developers who work with [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification) can use a utility tool called [**Creator**](./src/README.md#Creator) to automate the creation of API templates based on an Open API Specification file. Developers can also supply API Management policies for an API in XML format. With this tool, API developers can continue focusing on the formats and artifacts they are familiar with.
+
+For customers who have already been using API Management or do not use the Open API Specifications we have created another tool called [**Extractor**](./src/README.md#extractor) to help them generate templates by extracting configurations from their exisitng API Management instances. 
 
 # Creator
 
