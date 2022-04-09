@@ -12,9 +12,9 @@ Once API developers have finished developing and testing an API, and have genera
 
 There are two methods to create API definitions. 
 
-API developers who work with [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification) can use a utility tool called [**Creator**](./src/README.md#Creator) to automate the creation of API templates based on an Open API Specification file. Developers can also supply API Management policies for an API in XML format. With this tool, API developers can continue focusing on the formats and artifacts they are familiar with.
+* API developers who work with [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification) can use a utility tool called [**Creator**](./src/README.md#Creator) to automate the creation of API templates based on an Open API Specification file. Developers can also supply API Management policies for an API in XML format. With this tool, API developers can continue focusing on the formats and artifacts they are familiar with.
 
-For customers who have already been using API Management or do not use the Open API Specifications we have created another tool called [**Extractor**](./src/README.md#extractor) to help them generate templates by extracting configurations from their exisitng API Management instances. 
+* For customers who have already been using API Management or do not use the Open API Specifications we have created another tool called [**Extractor**](./src/README.md#extractor) to help them generate templates by extracting configurations from their exisitng API Management instances. 
 
 # Creator
 
