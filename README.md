@@ -2,13 +2,6 @@
 
 Westjet operates 4 API environments: Development, QA, Staging and Production, each has its own API Management instance. API developers have access to the Development instance and can use it for developing and testing their APIs. Staging and production instances are managed by a designated team.
 
-The configuration for all API Management instances is kept in this repository. 
-
-* **Service template**: contains all the service-level configurations of the API Management instance (e.g., pricing tier and custom domains). 
-* **Shared templates**: contain shared resources throughout an API Management instance (e.g., groups, products, loggers). 
-* **API templates**: include configurations of APIs and their sub-resources (e.g., operations, policies, diagnostics settings). 
-* **Master template**: ties everything together by [linking](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-linked-templates) to all 
-
 API developers can fork the publisher repository to a developer repository and work on the changes for their APIs. Developers can focus on the API templates for their APIs and do not need to change the shared or service templates.
 
 Once API developers have finished developing and testing an API, and have generated the API template, they can submit a pull request to merge the changes to the main branch of this repository. The API management team will validate the pull request to make sure the changes are safe and compliant.
