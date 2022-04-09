@@ -4,6 +4,11 @@ Westjet operates 4 API environments: Development, QA, Staging and Production, ea
 
 WestJet's API Management production environment is deployed to US West 2 and US East. The multi-region deployment of the production instance reduces latency and improves service availability if one region goes offline. The production instance is also deployed with zone redundancy. Zone redundancy replicates the gateway and  control plane across datacenters in physically separated zones. The combination of availability zones for redundancy within a region, and multi-region deployments to improve the gateway availability if there is a regional outage, helps enhance both the reliability and performance.
 
+1. [API Development](#running-armTemplates-application)
+2. [Creating API Definitions](#Creator)
+3. [ Extractor ](#Extractor)
+4. [Route API calls to regional backend services]
+
 # API Development
 
 API developers have access to the Development instance and can use it for developing and testing their APIs. Staging and production instances are managed by a designated team.
@@ -572,3 +577,9 @@ Likewise, if you [package the Extractor as a dotnet CLI tool](#creator2), you ca
 ```
 apim-templates extract
 ```
+
+## Route API calls to regional backend services
+
+By default, each API routes requests to a single backend service URL. Even though there are Azure API Management instances in various regions, the API gateway will still forward requests to the same backend service, which is deployed in only one region. In this case, the performance gain will come only from responses cached within Azure API Management in a region specific to the request, but contacting the backend across the globe may still cause high latency.
+
+To fully leverage geographical distribution of your system, you should have backend services deployed in the same regions as Azure API Management instances. Then, using policies and @(context.Deployment.Region) property, you can route the traffic to local instances of your backend.
