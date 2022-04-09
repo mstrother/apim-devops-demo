@@ -12,7 +12,7 @@
             "value": "contosoapim-dev"
         },
         "repoBaseUrl": {
-            "value": "."
+            "value": "https://raw.githubusercontent.com/mstrother/apim-devops-demo/main"
         }
     }
 }
