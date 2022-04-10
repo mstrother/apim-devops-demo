@@ -45,4 +45,4 @@ jobs:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ secrets.AZURE_RG }}
         template: ./master.template.json
-        parameters: ./master.parameters.json ApimServiceName=apim-wesjet-staging
+        parameters: ./master.parameters.json ApimServiceName=apim-westjet-staging
