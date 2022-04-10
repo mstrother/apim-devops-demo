@@ -13,7 +13,7 @@
       "name": "[concat(parameters('apimServiceName'), '/petstoreVersionSetID')]",
       "dependsOn": [],
       "properties": {
-        "displayName": "myAPIVersionSet",
+        "displayName": "Pet Store API",
         "description": "a description",
         "versionQueryName": "versionQuery",
         "versionHeaderName": "versionHeader",
