@@ -159,6 +159,24 @@
              "[resourceId('Microsoft.Resources/deployments', 'usersTemplate')]"
             ]
          },
+         {
+            "apiVersion": "2017-05-10",
+            "name": "petstoreVersionSetTemplate",
+            "type": "Microsoft.Resources/deployments",
+            "properties": {
+              "mode": "Incremental",
+              "templateLink": {
+                 "uri":"[concat(parameters('repoBaseUrl'), '/petstore/version-set.template.json')]",
+                 "contentVersion":"1.0.0.0"
+              },
+              "parameters": {
+                 "ApimServiceName": {"value": "[parameters('ApimServiceName')]" }
+               }
+            },
+            "dependsOn": [
+             "[resourceId('Microsoft.Resources/deployments', 'serviceTemplate')]"
+            ]
+         }
     ],
     "outputs": {}
 }
