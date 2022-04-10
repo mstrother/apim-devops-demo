@@ -159,6 +159,7 @@
              "[resourceId('Microsoft.Resources/deployments', 'usersTemplate')]"
             ]
          },
+        /*
          {
             "apiVersion": "2017-05-10",
             "name": "httpBinVersionSetTemplate",
@@ -196,6 +197,8 @@
             "[resourceId('Microsoft.Resources/deployments', 'httpBinVersionSetTemplate')]"
             ]
          },
+        */
+        /*
          {
             "apiVersion": "2017-05-10",
             "name": "petstoreVersionSetTemplate",
@@ -251,6 +254,6 @@
             "[resourceId('Microsoft.Resources/deployments', 'petstoreInitialTemplate')]"
             ]
          }
-    ],
+    ],*/
     "outputs": {}
 }
