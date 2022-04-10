@@ -216,7 +216,7 @@
          },
          {
             "apiVersion": "2017-05-10",
-            "name": "petstoreV1Template",
+            "name": "petstoreInitialTemplate",
             "type": "Microsoft.Resources/deployments",
             "properties": {
               "mode": "Incremental",
@@ -231,7 +231,7 @@
          },
          {
             "apiVersion": "2017-05-10",
-            "name": "petstoreV1Template",
+            "name": "petstoreSubsequentTemplate",
             "type": "Microsoft.Resources/deployments",
             "properties": {
               "mode": "Incremental",
