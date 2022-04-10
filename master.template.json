@@ -193,7 +193,7 @@
             },
             "dependsOn": [
             "[resourceId('Microsoft.Resources/deployments', 'productStarterTemplate')]",
-             "[resourceId('Microsoft.Resources/deployments', 'httpBinVersionSetTemplate')]"
+            "[resourceId('Microsoft.Resources/deployments', 'httpBinVersionSetTemplate')]"
             ]
          },
          {
@@ -203,7 +203,7 @@
             "properties": {
               "mode": "Incremental",
               "templateLink": {
-                 "uri":"[concat(parameters('repoBaseUrl'), '/api-httpbin/v2/api-httpbin.v2.template.json')]",
+                 "uri":"[concat(parameters('repoBaseUrl'), '/petstore/api.template.json')]",
                  "contentVersion":"1.0.0.0"
               },
               "parameters": {
@@ -212,8 +212,26 @@
             },
             "dependsOn": [
             "[resourceId('Microsoft.Resources/deployments', 'productStarterTemplate')]",
-             "[resourceId('Microsoft.Resources/deployments', 'httpBinVersionSetTemplate')]",
-             "[resourceId('Microsoft.Resources/deployments', 'httpBinV1Template')]"
+            "[resourceId('Microsoft.Resources/deployments', 'httpBinVersionSetTemplate')]",
+            "[resourceId('Microsoft.Resources/deployments', 'httpBinV1Template')]"
+            ]
+         },
+         {
+            "apiVersion": "2017-05-10",
+            "name": "petstoreV1Template",
+            "type": "Microsoft.Resources/deployments",
+            "properties": {
+              "mode": "Incremental",
+              "templateLink": {
+                 "uri":"[concat(parameters('repoBaseUrl'), '/petstore/api.template.json')]",
+                 "contentVersion":"1.0.0.0"
+              },
+              "parameters": {
+                 "ApimServiceName": {"value": "[parameters('ApimServiceName')]" }
+               }
+            },
+            "dependsOn": [
+            "[resourceId('Microsoft.Resources/deployments', 'productStarterTemplate')]"
             ]
          }
     ],
