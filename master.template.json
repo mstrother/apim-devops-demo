@@ -176,43 +176,6 @@
             "dependsOn": [
              "[resourceId('Microsoft.Resources/deployments', 'serviceTemplate')]"
             ]
-         },
-         {
-            "apiVersion": "2017-05-10",
-            "name": "petstoreInitialTemplate",
-            "type": "Microsoft.Resources/deployments",
-            "properties": {
-              "mode": "Incremental",
-              "templateLink": {
-                 "uri":"[concat(parameters('repoBaseUrl'), '/petstore/PetStore-initial.api.template.json')]",
-                 "contentVersion":"1.0.0.0"
-              },
-              "parameters": {
-                 "ApimServiceName": {"value": "[parameters('ApimServiceName')]" }
-               }
-            },
-            "dependsOn": [
-            "[resourceId('Microsoft.Resources/deployments', 'petstoreVersionSetTemplate')]"
-            ]
-         },
-         {
-            "apiVersion": "2017-05-10",
-            "name": "petstoreSubsequentTemplate",
-            "type": "Microsoft.Resources/deployments",
-            "properties": {
-              "mode": "Incremental",
-              "templateLink": {
-                 "uri":"[concat(parameters('repoBaseUrl'), '/petstore/PetStore-subsequent.api.template.json')]",
-                 "contentVersion":"1.0.0.0"
-              },
-              "parameters": {
-                 "ApimServiceName": {"value": "[parameters('ApimServiceName')]" }
-               }
-            },
-            "dependsOn": [
-            "[resourceId('Microsoft.Resources/deployments', 'petstoreVersionSetTemplate')]",
-            "[resourceId('Microsoft.Resources/deployments', 'petstoreInitialTemplate')]"
-            ]
          }
     ],
     "outputs": {}
