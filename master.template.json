@@ -228,6 +228,22 @@
                  "ApimServiceName": {"value": "[parameters('ApimServiceName')]" }
                }
             }
+         },
+        ,
+         {
+            "apiVersion": "2017-05-10",
+            "name": "petstoreV1Template",
+            "type": "Microsoft.Resources/deployments",
+            "properties": {
+              "mode": "Incremental",
+              "templateLink": {
+                 "uri":"[concat(parameters('repoBaseUrl'), '/petstore/PetStore-subsequent.api.template.json')]",
+                 "contentVersion":"1.0.0.0"
+              },
+              "parameters": {
+                 "ApimServiceName": {"value": "[parameters('ApimServiceName')]" }
+               }
+            }
          }
     ],
     "outputs": {}
