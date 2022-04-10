@@ -198,26 +198,6 @@
          },
          {
             "apiVersion": "2017-05-10",
-            "name": "httpBinV2Template",
-            "type": "Microsoft.Resources/deployments",
-            "properties": {
-              "mode": "Incremental",
-              "templateLink": {
-                 "uri":"[concat(parameters('repoBaseUrl'), '/petstore/api.template.json')]",
-                 "contentVersion":"1.0.0.0"
-              },
-              "parameters": {
-                 "ApimServiceName": {"value": "[parameters('ApimServiceName')]" }
-               }
-            },
-            "dependsOn": [
-            "[resourceId('Microsoft.Resources/deployments', 'productStarterTemplate')]",
-            "[resourceId('Microsoft.Resources/deployments', 'httpBinVersionSetTemplate')]",
-            "[resourceId('Microsoft.Resources/deployments', 'httpBinV1Template')]"
-            ]
-         },
-         {
-            "apiVersion": "2017-05-10",
             "name": "petstoreV1Template",
             "type": "Microsoft.Resources/deployments",
             "properties": {
