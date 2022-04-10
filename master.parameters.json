@@ -8,9 +8,6 @@
         "publisherName": {
             "value": "Xerris"
         },
-        "ApimServiceName": {
-            "value": "apim-westjet-dev"
-        },
         "repoBaseUrl": {
             "value": "https://raw.githubusercontent.com/mstrother/apim-devops-demo/main"
         }
