@@ -5,10 +5,11 @@ Westjet operates 4 API environments: Development, QA, Staging and Production, ea
 WestJet's API Management production environment is deployed to US West 2 and US East. The multi-region deployment of the production instance reduces latency and improves service availability if one region goes offline. The production instance is also deployed with zone redundancy. Zone redundancy replicates the gateway and  control plane across datacenters in physically separated zones. The combination of availability zones for redundancy within a region, and multi-region deployments to improve the gateway availability if there is a regional outage, helps enhance both the reliability and performance.
 
 1. [API Development](#running-armTemplates-application)
-2. [Creating API Definitions](#Creator)
-3. [Creator](#Creator)
-4. [Extractor](#Extractor)
-5. [Route API calls to regional backend services](#Extractor)
+2. [Developer Portal](#developer-portal)
+3. [Creating API Definitions](#Creator)
+4. [Creator](#Creator)
+5. [Extractor](#Extractor)
+6. [Route API calls to regional backend services](#Extractor)
 
 # API Development
 
@@ -18,7 +19,13 @@ API developers can fork the publisher repository to a developer repository and w
 
 Once API developers have finished developing and testing an API, and have generated the API template, they can submit a pull request to merge the changes to the main branch of this repository. The API management team will validate the pull request to make sure the changes are safe and compliant.
 
-## Creating API Definitions
+# Developer Portal
+
+Developer portal is an automatically generated, fully customizable website with the documentation of your APIs. It is where API consumers can discover your APIs, learn how to use them, and request access.
+
+[Development Environment](https://apim-westjet-dev.developer.azure-api.net/)
+
+# Creating API Definitions
 
 There are two methods to create API definitions. 
 
