@@ -10,7 +10,7 @@
     {
       "apiVersion": "2021-08-01",
       "type": "Microsoft.ApiManagement/service/apiVersionSets",
-      "name": "[concat(parameters('apimServiceName'), '/myVersionSetID')]",
+      "name": "[concat(parameters('apimServiceName'), '/petstoreVersionSetID')]",
       "dependsOn": [],
       "properties": {
         "displayName": "myAPIVersionSet",
