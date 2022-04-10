@@ -2,7 +2,6 @@ on:
   push:
     branches:
       - main
-      - petstore
 name: Azure ARM
 jobs:
   development:
