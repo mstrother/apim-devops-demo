@@ -231,6 +231,7 @@
             "[resourceId('Microsoft.Resources/deployments', 'petstoreVersionSetTemplate')]",
             "[resourceId('Microsoft.Resources/deployments', 'petstoreInitialTemplate')]"
             ]
+         }
     ],
     "outputs": {}
 }
