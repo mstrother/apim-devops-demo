@@ -36,8 +36,7 @@
         "[resourceId('Microsoft.ApiManagement/service/apis', parameters('apimServiceName'), 'PetStore')]"
       ],
       "properties": {
-        "value": "<policies>\n  <inbound>\n    <base />\n  </inbound>\n  <backend>\n    <base />\n  </backend>\n  <outbound>\n    <set-header name=\"X-Powered-By\" exists-action=\"delete\" />\n    <set-header name=\"X-AspNet-Version\" exists-action=\"delete\" />\n    <base />\n
-</outbound>\n  <on-error>\n    <base />\n  </on-error>\n</policies>",
+        "value": "<policies>\n  <inbound>\n    <base />\n  </inbound>\n  <backend>\n    <base />\n  </backend>\n  <outbound>\n    <set-header name=\"X-Powered-By\" exists-action=\"delete\" />\n    <set-header name=\"X-AspNet-Version\" exists-action=\"delete\" />\n    <base />\n  </outbound>\n  <on-error>\n    <base />\n  </on-error>\n</policies>",
         "format": "rawxml"
       }
     },
@@ -49,8 +48,7 @@
         "[resourceId('Microsoft.ApiManagement/service/apis', parameters('apimServiceName'), 'PetStore')]"
       ],
       "properties": {
-        "value": "<policies>\n  <inbound>\n    <rate-limit-by-key calls=\"3\" renewal-period=\"15\" counter-key=\"@(context.Subscription.Id)\" />\n    <base />\n  </inbound>\n  <backend>\n    <base />\n  </backend>\n  <outbound>\n    <base />\n  </outbound>\n  <on-error>\n    <ba
-se />\n  </on-error>\n</policies>",
+        "value": "<policies>\n  <inbound>\n    <rate-limit-by-key calls=\"3\" renewal-period=\"15\" counter-key=\"@(context.Subscription.Id)\" />\n    <base />\n  </inbound>\n  <backend>\n    <base />\n  </backend>\n  <outbound>\n    <base />\n  </outbound>\n  <on-error>\n    <base />\n  </on-error>\n</policies>",
         "format": "rawxml"
       }
     },
@@ -62,8 +60,7 @@ se />\n  </on-error>\n</policies>",
         "[resourceId('Microsoft.ApiManagement/service/apis', parameters('apimServiceName'), 'PetStore')]"
       ],
       "properties": {
-        "value": "<policies>\n  <inbound>\n    <rate-limit-by-key calls=\"3\" renewal-period=\"15\" counter-key=\"@(context.Subscription.Id)\" />\n    <base />\n  </inbound>\n  <backend>\n    <base />\n  </backend>\n  <outbound>\n    <base />\n  </outbound>\n  <on-error>\n    <ba
-se />\n  </on-error>\n</policies>",
+        "value": "<policies>\n  <inbound>\n    <rate-limit-by-key calls=\"3\" renewal-period=\"15\" counter-key=\"@(context.Subscription.Id)\" />\n    <base />\n  </inbound>\n  <backend>\n    <base />\n  </backend>\n  <outbound>\n    <base />\n  </outbound>\n  <on-error>\n    <base />\n  </on-error>\n</policies>",
         "format": "rawxml"
       }
     }
